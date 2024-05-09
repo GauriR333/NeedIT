@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="number" table="x_374399_needit_needit">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="imp" table="x_374399_needit_needit">
         <active>true</active>
         <array>false</array>
         <attributes/>
@@ -13,10 +13,10 @@
         <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label>Number</column_label>
+        <column_label>Important</column_label>
         <comments/>
         <create_roles/>
-        <default_value>javascript:getNextObjNumberPadded();</default_value>
+        <default_value/>
         <defaultsort/>
         <delete_roles/>
         <dependent/>
@@ -24,15 +24,15 @@
         <display>false</display>
         <dynamic_creation>false</dynamic_creation>
         <dynamic_creation_script/>
-        <dynamic_default_value display_value="Get Next Padded Number">fdcb83a85f220100a9ad2572f2b4773c</dynamic_default_value>
+        <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>number</element>
+        <element>imp</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <formula/>
         <function_definition/>
         <function_field>false</function_field>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Integer">integer</internal_type>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
         <name>x_374399_needit_needit</name>
@@ -51,19 +51,19 @@
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-05-09 07:01:50</sys_created_on>
-        <sys_name>Number</sys_name>
+        <sys_created_on>2024-05-09 06:35:58</sys_created_on>
+        <sys_name>Important</sys_name>
         <sys_package display_value="NeedIT " source="x_374399_needit">2dcd6264838e0210349455a6feaad396</sys_package>
         <sys_policy/>
         <sys_scope display_value="NeedIT ">2dcd6264838e0210349455a6feaad396</sys_scope>
-        <sys_update_name>sys_dictionary_x_374399_needit_needit_number</sys_update_name>
+        <sys_update_name>sys_dictionary_x_374399_needit_needit_imp</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-09 07:03:52</sys_updated_on>
+        <sys_updated_on>2024-05-09 07:03:19</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
         <use_dependent_field>false</use_dependent_field>
-        <use_dynamic_default>true</use_dynamic_default>
+        <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
         <virtual_type>script</virtual_type>
