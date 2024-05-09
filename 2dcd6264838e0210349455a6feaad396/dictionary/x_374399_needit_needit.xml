@@ -3,15 +3,27 @@
         <element label="Assignment group" max_length="32" name="assignment_group" reference="sys_user_group" type="reference"/>
         <element label="Assign to" max_length="32" name="assign_to" reference="sys_user" type="reference"/>
         <element label="Description" max_length="40" name="description" type="string"/>
-        <element label="impact" max_length="40" name="impact" type="string"/>
+        <element choice="1" label="Impact" max_length="40" name="impact" type="integer">
+            <choice>
+                <element inactive_on_update="false" label="1" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="2" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="3" sequence="2" value="3"/>
+            </choice>
+        </element>
         <element label="Number" max_length="40" name="number" type="string"/>
-        <element label="priority" max_length="40" name="priority" type="string"/>
+        <element dependent="urgency" dependent_on_field="urgency" label="priority" max_length="40" name="priority" type="string" use_dependent_field="true"/>
         <element label="Short Description" max_length="40" name="short_description" type="string"/>
         <element choice="1" label="State" max_length="40" name="state" type="choice">
             <choice/>
         </element>
         <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
-        <element label="urgency" max_length="40" name="urgency" type="string"/>
+        <element choice="1" label="Urgency" max_length="40" name="urgency" type="integer">
+            <choice>
+                <element inactive_on_update="false" label="1" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="2" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="3" sequence="2" value="3"/>
+            </choice>
+        </element>
         <element choice="1" label="What Needed" max_length="40" name="what_needed" type="choice">
             <choice/>
         </element>
